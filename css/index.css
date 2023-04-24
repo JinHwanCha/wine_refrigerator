@@ -71,6 +71,7 @@ html {scroll-behavior:smooth;}
 #winerefrigerator_wrap .accordion_box {display:none;width:100%;margin:0 auto;padding:104px 0;text-align:left;}
 #winerefrigerator_wrap .accordion_flex {display:flex;}
 #winerefrigerator_wrap .accordion_flex > div {width:50%;}
+#winerefrigerator_wrap .accordion_flex .notice_list {margin-bottom: 50px;}
 #winerefrigerator_wrap .accordion_flex .notice_left {padding-right:60px;border-right:1px solid #ddd;}
 #winerefrigerator_wrap .accordion_flex .notice_right {padding-left:60px;}
 #winerefrigerator_wrap .accordion_flex .notice_title {margin-bottom:14px;font-family:'SamsungOneKorean700';font-size:18px;letter-spacing:-0.035em;}
@@ -294,6 +295,7 @@ html {scroll-behavior:smooth;}
     #winerefrigerator_wrap .accordion_button::after {width:0.6944vw;height:0.4167vw;transform:translateY(-50%);background:url('../images/notice_arrow.png') center no-repeat;background-size:0.6944vw 0.4167vw;}
     #winerefrigerator_wrap .accordion_button.on::after {background:url('../images/notice_arrow_on.png') center no-repeat;background-size:0.6944vw 0.4167vw;}
     #winerefrigerator_wrap .accordion_box {padding:7.2222vw 0;}
+    #winerefrigerator_wrap .accordion_flex .notice_list {margin-bottom: 3.4722vw;}
     #winerefrigerator_wrap .accordion_flex .notice_left {padding-right:4.1667vw;border-right:0.0694vw solid #ddd;}
     #winerefrigerator_wrap .accordion_flex .notice_right {padding-left:4.1667vw;}
     #winerefrigerator_wrap .accordion_flex .notice_title {margin-bottom:0.9722vw;font-size:1.2500vw;}
