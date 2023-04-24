@@ -1,0 +1,690 @@
+@charset "utf-8";
+
+@font-face {
+    font-family:'Samsung Sharp Sans';
+    src:url('font/SamsungSharpSans-Bold.otf'), url('font/SamsungSharpSans-bold.ttf');
+}
+
+@font-face {
+    font-family:'Samsung Sharp';
+    src:url('font/SamsungSharpSans-Medium.otf'), url('font/SamsungSharpSans-bold.ttf');
+}
+
+@font-face {
+    font-family:'SamsungOneKorean300';
+    src:url('font/SamsungOneKoreanOTF\ 300.otf');
+}
+
+@font-face {
+    font-family:'SamsungOneKorean400';
+    src:url('font/SamsungOneKoreanOTF\ 400.otf');
+}
+
+@font-face {
+    font-family:'SamsungOneKorean700';
+    src:url('font/SamsungOneKoreanOTF\ 700.otf');
+}
+
+@font-face {
+    font-family:'SamsungOneKorean300c';
+    src:url('font/SamsungOneKoreanOTF\ 300c.otf');
+}
+
+@font-face {
+    font-family:'SamsungOneKorean700c';
+    src:url('font/SamsungOneKoreanOTF\ 700c.otf');
+}
+
+/* common */
+html, body {margin:0;padding:0;}
+html {scroll-behavior:smooth;}
+*{margin:0;padding:0;box-sizing:border-box;line-height:1;}
+#winerefrigerator_wrap {max-width:1920px;width:100%;margin:0 auto;overflow:hidden;}
+#winerefrigerator_wrap .mo_only {display:none !important;}
+#winerefrigerator_wrap strong {font-weight:700;vertical-align:baseline;}
+#winerefrigerator_wrap p {letter-spacing:-0.035em;font-family:'SamsungOneKorean400';}
+#winerefrigerator_wrap span {font-weight:400;vertical-align:baseline;letter-spacing:-0.025em;}
+#winerefrigerator_wrap a {font-family:'SamsungOneKorean400';color:#000;}
+#winerefrigerator_wrap img{width:100%;}
+#winerefrigerator_wrap section {position:relative;max-width:1920px;width:100%;overflow: hidden;}
+#winerefrigerator_wrap .pd_60 {max-width:1440px;margin:0 auto;padding:0 60px;}
+#winerefrigerator_wrap .inner_1920 {max-width:1920px;width:100%;margin:0 auto;}
+#winerefrigerator_wrap .inner_1440 {max-width:1440px;width:100%;margin:0 auto;}
+#winerefrigerator_wrap .cta.black {font-family:'SamsungOneKorean700';color:#fff;background-color:#000;}
+#winerefrigerator_wrap .title {font-family:'SamsungOneKorean700';letter-spacing:-0.025em;}
+#winerefrigerator_wrap .sub_title {font-family:'SamsungOneKorean400';}
+#winerefrigerator_wrap .font_medium {font-family:'SamsungOneKorean400';}
+#winerefrigerator_wrap .font_300 {font-family:'SamsungOneKorean300';font-weight:300;}
+#winerefrigerator_wrap .font_300c {font-family:'SamsungOneKorean300c';font-weight:300;}
+#winerefrigerator_wrap .font_400 {font-family:'SamsungOneKorean400';font-weight:400;}
+#winerefrigerator_wrap .font_700 {font-family:'SamsungOneKorean700';font-weight:700;}
+#winerefrigerator_wrap .font_bold {font-family:'Samsung Sharp Sans';font-weight:bold;letter-spacing:0;}
+#winerefrigerator_wrap .underline {border-bottom:1px solid #000;letter-spacing:-0.035em;}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{margin:0 5px}
+/* #winerefrigerator_wrap .slider .swiper-button-disabled {opacity:0.5;} */
+
+/* accordion - 혜택 유의사항 영역 */
+#winerefrigerator_wrap .accordion {max-width:1320px;margin:0 auto;text-align:center;padding:10px 0;}
+#winerefrigerator_wrap .accordion_button {position:relative;padding:0 21px 2px 0;font-family:'SamsungOneKorean700';font-size:18px;}
+#winerefrigerator_wrap .accordion_button::after {content:'';position:absolute;right:0;top:50%;width:10px;height:6px;transform:translateY(-50%);background:url('../images/notice_arrow.png') center no-repeat;background-size:10px 6px;}
+#winerefrigerator_wrap .accordion_button.on::after {background:url('../images/notice_arrow_on.png') center no-repeat;background-size:10px 6px;}
+#winerefrigerator_wrap .accordion_box {display:none;width:100%;margin:0 auto;padding:104px 0;text-align:left;}
+#winerefrigerator_wrap .accordion_flex {display:flex;}
+#winerefrigerator_wrap .accordion_flex > div {width:50%;}
+#winerefrigerator_wrap .accordion_flex .notice_left {padding-right:60px;border-right:1px solid #ddd;}
+#winerefrigerator_wrap .accordion_flex .notice_right {padding-left:60px;}
+#winerefrigerator_wrap .accordion_flex .notice_title {margin-bottom:14px;font-family:'SamsungOneKorean700';font-size:18px;letter-spacing:-0.035em;}
+#winerefrigerator_wrap .accordion_flex .notice_desc {position:relative;padding-left:14px;font-family:'SamsungOneKorean400';font-size:16px;line-height:1.5;margin-bottom:8px;letter-spacing:-0.035em;word-break:keep-all;}
+#winerefrigerator_wrap .accordion_flex .notice_desc::before {content:'';position:absolute;left:0;top:10px;width:3px;height:3px;border-radius:50%;background-color:#8a8a8a;}
+
+/* header */
+.gnb {width:100%;border-bottom:1px solid #ebebeb;}
+.gnb_box {display:flex;align-items:center; max-width:1440px;margin:0 auto;height:80px;}
+.gnb_box .logo{display:flex;align-items:center;width:103px;margin-left:24px;}
+.gnb_box .gnb_content_box {display:flex;justify-content:space-between;align-items:center;width:100%;padding:0 27px 0 95px;}
+.gnb_box .gnb_list {display:flex;align-items:center;gap:23px;}
+.gnb_box .gnb_item {font-weight:700;}
+.gnb_box a {font-size:14px;color:#000;}
+.gnb_box a.plaza {position:relative;padding-right:12px;}
+.gnb_box a.plaza::after {content:'';position:absolute;right:0;top:2.5px;width:10px;height:14px;background:url('../images/gnb_plaza_pc.png') top center no-repeat;background-size:100%;}
+.gnb_box a.gnb_arrow {position:relative;padding-right:21px;}
+.gnb_box a.gnb_arrow::after {content:'';position:absolute;right:0;top:4px;width:12px;height:11px;background:url('../images/gnb_arrow_pc.png') top center no-repeat;background-size:100%;}
+.gnb_box .account_list {display:flex;align-items:center;gap:26px;}
+.gnb_box .account_item a {text-indent:-9999px;display:block;}
+.gnb_box .account_item .search {width:22px;height:22px;background:url('../images/gnb_search_pc.png') top center no-repeat;background-size:100%;}
+.gnb_box .account_item .cart {width:23px;height:23px;background:url('../images/gnb_cart_pc.png') top center no-repeat;background-size:100%;}
+.gnb_box .account_item .account {width:17px;height:23px;background:url('../images/gnb_account.png') top center no-repeat;background-size:100%;}
+
+/* section_kv - 상단 kv */
+#winerefrigerator_wrap .sec_kv {max-width:1920px;}
+#winerefrigerator_wrap .sec_kv h2 {font-family:'SamsungOneKorean700';}
+#winerefrigerator_wrap .sec_kv .txt_box {position:absolute;left:50%;top:60px;transform:translateX(-50%);text-align:center;}
+#winerefrigerator_wrap .sec_kv .txt_box .title{margin-bottom:25px;font-size:48px;font-weight:700;letter-spacing:-0.07em;}
+#winerefrigerator_wrap .sec_kv .txt_box .desc {font-size:22px;line-height:1.727;}
+
+/* nav_bar - 탭메뉴 */
+.nav_bar {position:relative;border-bottom:3px solid #000;}
+.nav_bar::before {content:'';position:absolute;left:50%;top:12px;transform:translateX(-50%); width:100%;height:1px;background-color:#ddd;}
+.nav_bar .slider {width:1312px;margin:0 auto;padding-top:12px;}
+.nav_bar .swiper-wrapper {height:108px;box-sizing:border-box;}
+.nav_bar .slider .list > li {justify-content:flex-start;align-items:flex-start;width:25%;}
+.nav_bar .slider .list > li a {display:block;width:100%;height:100%;padding:13px 0 0 28px;border-left:1px solid #ddd;}
+.nav_bar .slider .title {margin-bottom:8px;font-size:21px;line-height:1.333;}
+#winerefrigerator_wrap .nav_bar .slider .title .sold_out {display:inline-flex;justify-content:center;align-items:center;width:54px;height:22px;margin:3px 0 0 4px;font-size:14px;vertical-align:text-top;border-radius:3px;background-color:#000;color:#fff;}
+#winerefrigerator_wrap .nav_bar .slider .list > li .nav_tab.on {position:relative;width:calc(100% - 10px);background-color:#000;color:#fff;border-left:none;}
+#winerefrigerator_wrap .nav_bar .slider .list > li .nav_tab.on::before {content:'';position:absolute;left:0;bottom:100%;width:100%;height:13px;background-color:#000;border-radius:6px 6px 0 0;}
+#winerefrigerator_wrap .nav_bar .slider .list > li .nav_tab.on::after {content:'';position:absolute;left:100%;bottom:0;width:10px;height:116px;background:url('../images/tab_tail_pc.png') center no-repeat;background-size:10px 116px;}
+.nav_bar .slider .title sup {margin-left:3px;font-size:60%;vertical-align:baseline;}
+#winerefrigerator_wrap .nav_bar .slider .period {font-family:'Samsung Sharp';font-size:14px;margin-left:2px;letter-spacing:0.01em;}
+.nav_bar .slider .slide_tit {display:none;}
+
+/* sec_mainkv - 메인 kv */
+.sec_mainkv .txt_box {position:absolute;top:247px;left:296px;color:#fff;}
+#winerefrigerator_wrap .sec_mainkv .title {margin-bottom:30px;font-size:54px;line-height:1.0185;letter-spacing:-0.015em;}
+#winerefrigerator_wrap .sec_mainkv .desc {margin-left:4px;font-size:24px;}
+
+/* sec_benefit - 런칭 구매 혜택 */
+#winerefrigerator_wrap section.sec_benefit {margin-top:97px;margin-bottom:87px;}
+#winerefrigerator_wrap section.sec_benefit .title {margin-bottom:38px;font-size:40px;letter-spacing:-0.045em;}
+.sec_benefit .slider {width:1320px;margin-bottom:29px;pointer-events:none;}
+.sec_benefit .slider .list > li {flex-direction:column;justify-content:flex-start;align-items:flex-start;width:424px;height:270px;margin-right:24px;}
+.sec_benefit .slider .list > li.point {background:url('../images/wine_benefit_01_pc.jpg') 100% no-repeat;}
+.sec_benefit .slider .list > li.install {background:url('../images/wine_benefit_02_pc.jpg') 100% no-repeat;}
+.sec_benefit .slider .list > li.delivery {background:url('../images/wine_benefit_03_pc.jpg') 100% no-repeat;}
+.sec_benefit .slider .list > li .title_tag {display:flex;justify-content:center;align-items:center;position:absolute;right:11px;top:-7px;width:58px;height:56px;font-family:'SamsungOneKorean700';font-size:15px;line-height:1.333;background-color:#ae3438;border-radius:3px;color:#fff;}
+.sec_benefit .slider .list > li .title_tag::after {content:'';position:absolute;right:-4px;top:0;width:0;height:0;border-right:7px solid transparent;border-bottom:7px solid #670a0e;border-left:0px solid transparent;z-index:-1;}
+.sec_benefit .slider .tag_black {display:inline-flex;justify-content:center;align-items:center;width:auto;height:20px;margin-bottom:10px;padding:0 6px;font-size:14px;border-radius:3px;background-color:#000;color:#fff;}
+.sec_benefit .slider .txt_box {margin:25px 0 0 30px;}
+#winerefrigerator_wrap .sec_benefit .slider .desc {margin-bottom:5px;font-family:'SamsungOneKorean700';font-size:22px;line-height:1.3636;letter-spacing:-0.035em;}
+#winerefrigerator_wrap .sec_benefit .slider .desc span.font_bold {letter-spacing:-0.025em;}
+#winerefrigerator_wrap .sec_benefit .slider .txt_box a.underline {display:inline-block;margin-bottom:62px;font-family:'SamsungOneKorean700';font-size:16px;pointer-events:auto;}
+#winerefrigerator_wrap .sec_benefit .slider .sub_desc {padding-left:10px;font-size:14px;line-height:1.2857;text-indent:-10px;letter-spacing:-0.035em;}
+.sec_benefit .slider .slide_tit {display:none;}
+
+/* sec_winecolor - 나만의 컬러 조합 */
+#winerefrigerator_wrap .sec_winecolor {margin-bottom:96px;}
+#winerefrigerator_wrap .sec_winecolor .txt_box {display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:40px;}
+#winerefrigerator_wrap .sec_winecolor .txt_box .title {margin:0 0 -2px -3px;font-size:40px;letter-spacing:-0.0325em;}
+.sec_winecolor .txt_box .cta.black {width:240px;height:60px;font-size:18px;border-radius:30px;}
+#winerefrigerator_wrap .sec_winecolor .slider2 {width:1440px;margin:0 auto;padding:0 60px 39px;overflow:hidden;}
+.sec_winecolor .swiper-wrapper {margin-bottom:23px;}
+.sec_winecolor .slider2 .tag {display:flex;flex-direction:column;justify-content:center;align-items:center;position:absolute;top:21px;right:-5px;width:58px;height:58px;border-radius:2px;}
+.sec_winecolor .slider2 .list > li {position:relative;flex-direction:column;justify-content:flex-start;margin-right:24px;width:280px;height:511px;background-color:#f8f8f8;border-radius:10px;}
+.sec_winecolor .slider2 .tag.new {background-color:#86beb9;}
+.sec_winecolor .slider2 .tag.best {background-color:#e79978;}
+.sec_winecolor .slider2 .tag::after {content:'';position:absolute;right:0;bottom:-3px;width:5px;height:10px;transform:skewY(-50deg);z-index:-1;}
+.sec_winecolor .slider2 .tag.new::after {background-color:#55a39d;}
+.sec_winecolor .slider2 .tag.best::after {background-color:#a2725d;}
+.sec_winecolor .slider2 .control {justify-content:space-between;top:240px;width:1386px;transform:translateX(-50%);margin:0 auto;background-color:transparent;}
+.sec_winecolor .slider2 .control .btn {position:relative;width:13px;height:24px;}
+.sec_winecolor .slider2 .control .btn::before {content:'';position:absolute;width:60px;height:590px;transform:translateX(-50%);background-color:#fff;z-index:-1;cursor:auto;}
+.sec_winecolor .slider2 .control .btn.btn_prev::before {left:0;}
+.sec_winecolor .slider2 .control .btn.btn_next::before {left:100%;}
+.sec_winecolor .slider2 .control .btn_prev {background:url('../images/arrow_prev.png') 100% no-repeat;}
+.sec_winecolor .slider2 .control .btn_next {background:url('../images/arrow_next.png') 100% no-repeat;}
+.sec_winecolor .slider2 .btn_pause {position:absolute;left:50%;bottom:0;width:12px;height:16px;margin-left:38px;background:url('../images/btn_pause_pc.png') 100% no-repeat;z-index:10;}
+.sec_winecolor .slider2 .btn_pause.on {background:url('../images/btn_play_pc.png') 100% no-repeat;}
+.sec_winecolor .slider2 .swiper-pagination-bullet {width:10px;height:10px;opacity:0.3;}
+.sec_winecolor .slider2 .swiper-pagination-bullet-active {background-color:#000;opacity:1;}
+#winerefrigerator_wrap .sec_winecolor .slider2 .tag span {line-height:19.8px;color:#fff;}
+#winerefrigerator_wrap .sec_winecolor .slider2 .tag .font_bold {font-size:17.16px;}
+#winerefrigerator_wrap .sec_winecolor .slider2 .tag .font_700 {font-size:14.52px;}
+#winerefrigerator_wrap .sec_winecolor .slider2 .list > li .img_box {width:100%;margin-bottom:40px;}
+#winerefrigerator_wrap .sec_winecolor .slider2 .txt_box {flex-direction:column;justify-content:center;align-items:center;width:200px;margin:0 auto;margin-bottom:29px;padding-bottom:18px;border-bottom:1px solid rgba(0, 0, 0, 0.15);}
+#winerefrigerator_wrap .sec_winecolor .slider2 .product_color {margin-bottom:21px;font-family:'SamsungOneKorean700';font-size:18px;letter-spacing:-0.02em;}
+#winerefrigerator_wrap .sec_winecolor .slider2 .product_num {font-size:15px;letter-spacing:0;color:#666;}
+#winerefrigerator_wrap .sec_winecolor .slider2 .price_box {width:200px;margin:0 auto;font-family:'SamsungOneKorean400';font-size:18px;letter-spacing:-0.05em;}
+#winerefrigerator_wrap .sec_winecolor .slider2 .price_box > dl {display:flex;justify-content:space-between;align-items:center;}
+#winerefrigerator_wrap .sec_winecolor .slider2 .sale_price {margin-bottom:18px;color:#999;}
+#winerefrigerator_wrap .sec_winecolor .slider2 .sub_desc {font-size:15px;text-align:center;text-indent:-11px;letter-spacing:-0.025em;color:#666;}
+#winerefrigerator_wrap .sec_winecolor .slider2 .slide_tit {bottom:-100px;}
+#winerefrigerator_wrap .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom,
+#winerefrigerator_wrap .swiper-pagination-fraction {bottom:0;left:-17px;}
+
+/* sec_intro - 냉장고를 소개합니다*/
+.sec_intro {margin-bottom:63px;}
+#winerefrigerator_wrap .sec_intro > .txt_box {display:flex;align-items:center;margin-bottom:36px;}
+#winerefrigerator_wrap .sec_intro > .txt_box .title {margin-right:20px;font-family:'SamsungOneKorean400';font-size:26px;font-weight:400;letter-spacing:-0.03em;}
+.sec_intro .txt_box .cta.black {width:158px;height:38px;font-size:18px;border-radius:19px;}
+#winerefrigerator_wrap .sec_intro .slider {width:1440px;margin:0 auto;padding:0 60px;overflow:hidden;}
+#winerefrigerator_wrap .sec_intro .slider .list > li {width:536px;margin-right:24px;}
+#winerefrigerator_wrap .sec_intro .slider .list > li:last-child {margin-right:0;}
+#winerefrigerator_wrap .sec_intro .slider .img_box {border-radius:10px;overflow:hidden;}
+#winerefrigerator_wrap .sec_intro .slider .txt_box {position:relative;margin-top:28px;}
+#winerefrigerator_wrap .sec_intro .slider .txt_box::before {content:'';position:absolute;top:0;left:0;}
+#winerefrigerator_wrap .sec_intro .slider .txt_box.kitchenfit {padding-left:45px;}
+#winerefrigerator_wrap .sec_intro .slider .txt_box.winestorage {padding-left:29px;}
+#winerefrigerator_wrap .sec_intro .slider .txt_box.winestorage .title {letter-spacing:-0.035em;}
+#winerefrigerator_wrap .sec_intro .slider .txt_box.humidity {padding-left:47px;}
+#winerefrigerator_wrap .sec_intro .slider .txt_box.low_noise {padding-left:74px;}
+#winerefrigerator_wrap .sec_intro .slider .txt_box.at_home {padding-left:58px;}
+#winerefrigerator_wrap .sec_intro .slider .txt_box.auto_open {padding-left:65px;}
+#winerefrigerator_wrap .sec_intro .slider .txt_box.kitchenfit::before {top:2px;left:-1px;width:32px;height:38px;background:url('../images/wine_intro_kitchen_pc.png') 100% no-repeat;}
+#winerefrigerator_wrap .sec_intro .slider .txt_box.winestorage::before {top:1px;width:15px;height:42px;background:url('../images/wine_intro_storage_pc.png') 100% no-repeat;}
+#winerefrigerator_wrap .sec_intro .slider .txt_box.humidity::before {top:2px;left:7px;width:22px;height:34px;background:url('../images/wine_intro_humidity_pc.png') 100% no-repeat;}
+#winerefrigerator_wrap .sec_intro .slider .txt_box.low_noise::before {top:3px;width:55px;height:17px;background:url('../images/wine_intro_low_noise_pc.png') 100% no-repeat;}
+#winerefrigerator_wrap .sec_intro .slider .txt_box.at_home::before {top:1px;width:44px;height:32px;background:url('../images/wine_intro_at_home_pc.png') 100% no-repeat;}
+#winerefrigerator_wrap .sec_intro .slider .txt_box.auto_open::before {top:1px;width:50px;height:44px;background:url('../images/wine_intro_auto_open_pc.png') 100% no-repeat;}
+#winerefrigerator_wrap .sec_intro .slider .title {margin-bottom:13px;font-size:24px;letter-spacing:-0.03em;}
+#winerefrigerator_wrap .sec_intro .slider .desc {margin-bottom:14px;font-size:16px;line-height:1.625;}
+#winerefrigerator_wrap .sec_intro .slider .sub_desc {padding-left:6px;text-indent:-6px;font-size:14px;line-height:1.5714;letter-spacing:-0.08em;color:#717171;}
+.sec_intro .slider .control {justify-content:space-between;top:115px;width:1386px;transform:translateX(-50%);margin:0 auto;background-color:transparent;}
+.sec_intro .slider .control .btn {position:relative;width:13px;height:24px;}
+.sec_intro .slider .control .btn::before {content:'';position:absolute;top:-122px;width:60px;height:490px;transform:translateX(-50%);background-color:#fff;z-index:-1;cursor:auto;pointer-events :none;}
+.sec_intro .slider .control .btn_prev {background:url('../images/arrow_prev.png') 100% no-repeat;}
+.sec_intro .slider .control .btn_next {background:url('../images/arrow_next.png') 100% no-repeat;}
+.sec_intro .slider .control .btn_prev.swiper-button-disabled {background:url('../images/arrow_prev_disabled.png') 100% no-repeat;}
+.sec_intro .slider .control .btn_next.swiper-button-disabled {background:url('../images/arrow_next_disabled.png') 100% no-repeat;}
+.sec_intro .slider .control .btn.btn_prev::before {left:0;}
+.sec_intro .slider .control .btn.btn_next::before {left:100%;}
+
+/* sec_photo - 포토 상품평 이벤트 */
+#winerefrigerator_wrap .sec_photo {display:flex;justify-content:space-between;flex-wrap:wrap;margin-bottom:115px;padding-bottom:20px;}
+#winerefrigerator_wrap .sec_photo .photo_box {position:relative;width:604px;}
+#winerefrigerator_wrap .sec_photo .photo_box .img_box {position:absolute;right:0;top:35px;width:187px;z-index:-1;}
+#winerefrigerator_wrap .sec_photo .photo_box .title {margin-bottom:12px;font-size:42px;letter-spacing:-0.065em;}
+#winerefrigerator_wrap .sec_photo .photo_box .desc {margin-bottom:19px;font-size:16px;line-height:2;letter-spacing:-0.005em;}
+#winerefrigerator_wrap .sec_photo .event_explain {margin-bottom:27px;}
+#winerefrigerator_wrap .sec_photo .explain_item {display:flex;flex-wrap:wrap;margin-bottom:16px;}
+#winerefrigerator_wrap .sec_photo .explain_title {width:124px;font-family:'SamsungOneKorean700';font-size:14px;}
+#winerefrigerator_wrap .sec_photo .explain_desc {width:250px;font-size:14px;letter-spacing:-0.025em;}
+#winerefrigerator_wrap .sec_photo .explain_sub_desc {margin:16px 0 0 124px;font-size:14px;line-height:1.2857;letter-spacing:-0.025em;}
+#winerefrigerator_wrap .sec_photo .cta_box {position:absolute;top:339px;}
+#winerefrigerator_wrap .sec_photo .cta.black {width:106px;height:38px;margin-right:37px;border-radius:19px;}
+#winerefrigerator_wrap .sec_photo .accordion_button {font-size:16px;letter-spacing:-0.04em;}
+
+/* howto_apply - 이벤트 응모방법 */
+#winerefrigerator_wrap .howto_apply {width:648px;margin-top:3px;}
+#winerefrigerator_wrap .howto_apply .title {position:relative;margin-bottom:44px;font-size:18px;letter-spacing:-0.035em;overflow:hidden;}
+#winerefrigerator_wrap .howto_apply .title::after {content:'';position:absolute;top:50%;left:126px;width:100%;height:1px;transform:translateY(-50%);background-color:#000;}
+#winerefrigerator_wrap .howto_apply .apply_list {display:flex;justify-content:space-between;}
+#winerefrigerator_wrap .howto_apply .apply_item {display:flex;flex-direction:column;align-items:center;width:200px;height:305px;padding-top:28px;background-color:#fff;border:1px solid #ddd;border-radius:10px;box-shadow:7px 7px 10px 0px rgba(0, 0, 0, 0.05);text-align:center;}
+#winerefrigerator_wrap .howto_apply .img_box {position:relative;width:120px;margin-bottom:16px;}
+#winerefrigerator_wrap .howto_apply .img_box .apply_tag {display:flex;justify-content:center;align-items:center;position:absolute;left:0;top:0;width:34px;height:34px;border-radius:50%;font-family:'Samsung Sharp Sans';font-size:16px;background-color:#000;color:#fff;letter-spacing:0;}
+#winerefrigerator_wrap .howto_apply .desc {font-size:16px;line-height:1.75;}
+#winerefrigerator_wrap .howto_apply .underline {margin-top:12px;padding-bottom:3px;font-family:'SamsungOneKorean700';font-size:16px;}
+#winerefrigerator_wrap .howto_apply .cta.black {width:111px;height:34px;margin:0 auto;margin-top:30px;font-size:16px;border-radius:17px;}
+
+/* sec_dotcom - 삼성닷컴 회원 혜택 모두보기 */
+#winerefrigerator_wrap .sec_dotcom {padding:126px 60px 156px;background-color:#f5f5f5;}
+#winerefrigerator_wrap .sec_dotcom .txt_box {text-align:center;margin-bottom:48px;}
+#winerefrigerator_wrap .sec_dotcom .txt_box .title {margin-bottom:46px;font-size:42px;letter-spacing:-0.065em;}
+#winerefrigerator_wrap .sec_dotcom .txt_box .cta_box {display:flex;justify-content:center;align-items:center;}
+#winerefrigerator_wrap .sec_dotcom .txt_box .cta.black {width:138px;height:38px;margin-right:34px;font-size:16px;border-radius:19px;}
+#winerefrigerator_wrap .sec_dotcom .txt_box .btn_more {position:relative;padding:0 17px 4px 0;font-family:'SamsungOneKorean700';font-size:18px;border-bottom:1px solid #000;letter-spacing:-0.045em;}
+#winerefrigerator_wrap .sec_dotcom .txt_box .btn_more::after {content:'';position:absolute;right:0;top:calc(50% - 2.5px);width:6px;height:10px;transform:translateY(-50%);background:url('../images/more_arrow.png') 100% no-repeat;}
+#winerefrigerator_wrap .sec_dotcom .dotcom_list {display:flex;gap:24px;flex-wrap:wrap;width:1320px;margin:0 auto;margin-bottom:92px;}
+#winerefrigerator_wrap .sec_dotcom .dotcom_item {width:312px;height:270px;padding:32px 30px;}
+#winerefrigerator_wrap .sec_dotcom .dotcom_item.point {background:url('../images/wine_dotcom_01_pc.jpg') 100% no-repeat;}
+#winerefrigerator_wrap .sec_dotcom .dotcom_item.percent {background:url('../images/wine_dotcom_02_pc.jpg') 100% no-repeat;}
+#winerefrigerator_wrap .sec_dotcom .dotcom_item.calendar {background:url('../images/wine_dotcom_03_pc.jpg') 100% no-repeat;}
+#winerefrigerator_wrap .sec_dotcom .dotcom_item.delivery {background:url('../images/wine_dotcom_04_pc.jpg') 100% no-repeat;}
+#winerefrigerator_wrap .sec_dotcom .dotcom_item.youmake {width:100%;height:300px;padding:43px 112px;background:url('../images/wine_dotcom_05_pc.jpg') 100% no-repeat;}
+#winerefrigerator_wrap .sec_dotcom .dotcom_item .title {margin-bottom:5px;font-size:24px;line-height:1.5;letter-spacing:-0.035em;}
+#winerefrigerator_wrap .sec_dotcom .dotcom_item .title .font_bold {letter-spacing:0.03em;}
+#winerefrigerator_wrap .sec_dotcom .dotcom_item .sub_desc {font-size:14px;}
+#winerefrigerator_wrap .sec_dotcom .dotcom_item.youmake .title {margin-bottom:10px;font-size:42px;}
+#winerefrigerator_wrap .sec_dotcom .dotcom_item.youmake .desc {margin-bottom:22px;font-size:18px;line-height:1.7777;}
+#winerefrigerator_wrap .sec_dotcom .dotcom_item.youmake .cta.black {width:127px;height:38px;border-radius:19px;letter-spacing:0.05em;}
+
+@media screen and (min-width:769px) and (max-width:1920px) {
+    /* common */
+    
+    /* section_kv - 상단 kv */
+    #winerefrigerator_wrap .sec_kv {max-width:100.0000vw;}
+    #winerefrigerator_wrap .sec_kv .txt_box {top:3.1250vw;}
+    #winerefrigerator_wrap .sec_kv .txt_box .title{margin-bottom:1.3021vw;font-size:2.5000vw;}
+    #winerefrigerator_wrap .sec_kv .txt_box .desc {font-size:1.1458vw;}
+
+    /* sec_mainkv - 메인 kv */
+    .sec_mainkv .txt_box {top:12.8646vw;left:15.4167vw;}
+    #winerefrigerator_wrap .sec_mainkv .title {margin-bottom:1.5625vw;font-size:2.8125vw;}
+    #winerefrigerator_wrap .sec_mainkv .desc {margin-left:0.2083vw;font-size:1.2500vw;}
+
+}
+@media screen and (min-width:769px) and (max-width:1440px) {
+    /* common */
+    #winerefrigerator_wrap .inner_1440 {max-width:100.0000vw;}
+    #winerefrigerator_wrap .pd_60 {max-width:100.0000vw;padding:0 4.1667vw;}
+    .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{margin:0 0.3472vw}
+
+    /* accordion - 혜택 유의사항 영역 */
+    #winerefrigerator_wrap .accordion {max-width:91.6667vw;padding:0.6944vw 0;}
+    #winerefrigerator_wrap .accordion_button {padding:0 1.4583vw 0.1389vw 0;font-size:1.2500vw;}
+    #winerefrigerator_wrap .accordion_button::after {width:0.6944vw;height:0.4167vw;transform:translateY(-50%);background:url('../images/notice_arrow.png') center no-repeat;background-size:0.6944vw 0.4167vw;}
+    #winerefrigerator_wrap .accordion_button.on::after {background:url('../images/notice_arrow_on.png') center no-repeat;background-size:0.6944vw 0.4167vw;}
+    #winerefrigerator_wrap .accordion_box {padding:7.2222vw 0;}
+    #winerefrigerator_wrap .accordion_flex .notice_left {padding-right:4.1667vw;border-right:0.0694vw solid #ddd;}
+    #winerefrigerator_wrap .accordion_flex .notice_right {padding-left:4.1667vw;}
+    #winerefrigerator_wrap .accordion_flex .notice_title {margin-bottom:0.9722vw;font-size:1.2500vw;}
+    #winerefrigerator_wrap .accordion_flex .notice_desc {padding-left:0.9722vw;font-size:1.1111vw;margin-bottom:0.5556vw;}
+    #winerefrigerator_wrap .accordion_flex .notice_desc::before {top:0.6944vw;width:0.2083vw;height:0.2083vw;}
+
+    /* gnb */
+    .gnb {border-bottom:0.0694vw solid #ebebeb;}
+    .gnb_box {max-width:100vw;height:5.5556vw;}
+    .gnb_box .logo{width:7.1528vw;margin-left:1.6667vw;}
+    .gnb_box .gnb_content_box {width:100%;padding:0 1.8750vw 0 6.5972vw}
+    .gnb_box .gnb_list {gap:1.5972vw;}
+    .gnb_box a {font-size:0.9722vw;}
+    .gnb_box a.plaza {padding-right:0.8333vw;}
+    .gnb_box a.plaza::after {top:0.1736vw;width:0.6944vw;height:0.9722vw;background:url('../images/gnb_plaza_pc.png') top center no-repeat;background-size:100%;}
+    .gnb_box a.gnb_arrow {padding-right:1.4583vw;}
+    .gnb_box a.gnb_arrow::after {top:0.2778vw;width:0.8333vw;height:0.7639vw;background:url('../images/gnb_arrow_pc.png') top center no-repeat;background-size:100%;}
+    .gnb_box .account_list {gap:1.8056vw;}
+    .gnb_box .account_item .search {width:1.5278vw;height:1.5278vw;background:url('../images/gnb_search_pc.png') top center no-repeat;background-size:100%;}
+    .gnb_box .account_item .cart {width:1.5972vw;height:1.5972vw;background:url('../images/gnb_cart_pc.png') top center no-repeat;background-size:100%;}
+    .gnb_box .account_item .account {width:1.1806vw;height:1.5972vw;background:url('../images/gnb_account.png') top center no-repeat;background-size:100%;}
+
+    /* common */
+    #winerefrigerator_wrap {max-width:133.3333vw;}
+    .font_bottom::after {height:0.8333vw;}
+    .font_navy {font-size:3.4722vw;}
+
+    /* nav_bar - 탭메뉴 */
+    .nav_bar {border-bottom:0.2083vw solid #000;}
+    .nav_bar::before {top:0.8333vw;height:0.0694vw;}
+    .nav_bar .slider {width:91.1111vw;padding-top:0.8333vw;}
+    .nav_bar .swiper-wrapper {height:7.5000vw;}
+    .nav_bar .slider .list > li a {padding:0.9028vw 0 0 1.9444vw;border-left:0.0694vw solid #ddd;}
+    .nav_bar .slider .title {margin-bottom:0.5556vw;font-size:1.4583vw;}
+    #winerefrigerator_wrap .nav_bar .slider .title .sold_out {width:3.7500vw;height:1.5278vw;margin:0.2083vw 0 0 0.2778vw;font-size:0.9722vw;border-radius:0.2083vw;}
+    #winerefrigerator_wrap .nav_bar .slider .list > li .nav_tab.on {width:calc(100% - 0.6944vw);}
+    #winerefrigerator_wrap .nav_bar .slider .list > li .nav_tab.on::before {height:0.9028vw;border-radius:0.4167vw 0.4167vw 0 0;}
+    #winerefrigerator_wrap .nav_bar .slider .list > li .nav_tab.on::after {width:0.6944vw;height:8.0556vw;background:url('../images/tab_tail_pc.png') center no-repeat;background-size:0.6944vw 8.0556vw;}
+    .nav_bar .slider .title sup {margin-left:0.2083vw;}
+    #winerefrigerator_wrap .nav_bar .slider .period {font-size:0.9722vw;margin-left:0.1389vw;}
+
+    /* sec_benefit - 런칭 구매 혜택 */
+    #winerefrigerator_wrap section.sec_benefit {margin-top:6.7361vw;margin-bottom:6.0417vw;}
+    #winerefrigerator_wrap section.sec_benefit .title {margin-bottom:2.6389vw;font-size:2.7778vw;}
+    .sec_benefit .slider {width:91.6667vw;margin-bottom:2.0139vw;}
+    .sec_benefit .slider .list > li {width:29.4444vw;height:18.7500vw;margin-right:1.6667vw;}
+    .sec_benefit .slider .list > li.point {background:url('../images/wine_benefit_01_pc.jpg') center no-repeat;background-size:100% 100%;}
+    .sec_benefit .slider .list > li.install {background:url('../images/wine_benefit_02_pc.jpg') center no-repeat;background-size:100% 100%;}
+    .sec_benefit .slider .list > li.delivery {background:url('../images/wine_benefit_03_pc.jpg') center no-repeat;background-size:100% 100%;}
+    .sec_benefit .slider .list > li .title_tag {right:0.7639vw;top:-0.4861vw;width:4.0278vw;height:3.8889vw;font-size:1.0417vw;border-radius:0.2083vw;}
+    .sec_benefit .slider .list > li .title_tag::after {right:-0.2778vw;border-right:0.4861vw solid transparent;border-bottom:0.4861vw solid #670a0e;border-left:0.0000vw solid transparent;}
+    .sec_benefit .slider .tag_black {height:1.3889vw;margin-bottom:0.6944vw;padding:0 0.4167vw;font-size:0.9722vw;border-radius:0.2083vw;}
+    .sec_benefit .slider .txt_box {margin:1.7361vw 0 0 2.0833vw;}
+    #winerefrigerator_wrap .sec_benefit .slider .desc {margin-bottom:0.3472vw;font-size:1.5278vw;}
+    #winerefrigerator_wrap .sec_benefit .slider .txt_box a.underline {margin-bottom:4.3056vw;font-size:1.1111vw;}
+    #winerefrigerator_wrap .sec_benefit .slider .sub_desc {padding-left:0.6944vw;font-size:0.9722vw;text-indent:-0.6944vw;}
+
+    /* sec_winecolor - 나만의 컬러 조합 */
+    #winerefrigerator_wrap .sec_winecolor {margin-bottom:6.6667vw;}
+    #winerefrigerator_wrap .sec_winecolor .txt_box {margin-bottom:2.7778vw;}
+    #winerefrigerator_wrap .sec_winecolor .txt_box .title {margin:0 0 -0.1389vw -0.2083vw;font-size:2.7778vw;}
+    .sec_winecolor .txt_box .cta.black {width:16.6667vw;height:4.1667vw;font-size:1.25vw;border-radius:2.0833vw;}
+    #winerefrigerator_wrap .sec_winecolor .slider2 {width:100.0000vw;padding:0 4.1667vw 2.7083vw;}
+    .sec_winecolor .swiper-wrapper {margin-bottom:1.5972vw;}
+    .sec_winecolor .slider2 .tag {top:1.4583vw;right:-0.3472vw;width:4.0278vw;height:4.0278vw;border-radius:0.1389vw;}
+    .sec_winecolor .slider2 .list > li {margin-right:1.6667vw;width:19.4444vw;height:35.4861vw;border-radius:0.6944vw;}
+    .sec_winecolor .slider2 .tag::after {bottom:-0.2083vw;width:0.3472vw;height:0.6944vw;}
+    .sec_winecolor .slider2 .control {top:16.6667vw;width:96.2500vw;}
+    .sec_winecolor .slider2 .control .btn {width:0.9028vw;height:1.6667vw;}
+    .sec_winecolor .slider2 .control .btn::before {width:4.1667vw;height:40vw;}
+    .sec_winecolor .slider2 .control .btn_prev {background:url('../images/arrow_prev.png') center no-repeat;background-size:0.9028vw 1.6667vw;}
+    .sec_winecolor .slider2 .control .btn_next {background:url('../images/arrow_next.png') center no-repeat;background-size:0.9028vw 1.6667vw;}
+    .sec_winecolor .slider2 .btn_pause {width:0.8333vw;height:1.1111vw;margin-left:2.6389vw;background:url('../images/btn_pause_pc.png') center no-repeat;background-size:0.8333vw 1.1111vw;}
+    .sec_winecolor .slider2 .btn_pause.on {background:url('../images/btn_play_pc.png') center no-repeat;background-size:0.8333vw 1.1111vw;}
+    .sec_winecolor .slider2 .swiper-pagination-bullet {width:0.6944vw;height:0.6944vw;}
+    #winerefrigerator_wrap .sec_winecolor .slider2 .tag span {line-height:1.3750vw;}
+    #winerefrigerator_wrap .sec_winecolor .slider2 .tag .font_bold {font-size:1.1917vw;}
+    #winerefrigerator_wrap .sec_winecolor .slider2 .tag .font_700 {font-size:1.0083vw;}
+    #winerefrigerator_wrap .sec_winecolor .slider2 .list > li .img_box {margin-bottom:2.7778vw;}
+    #winerefrigerator_wrap .sec_winecolor .slider2 .txt_box {width:13.8889vw;margin-bottom:2.0139vw;padding-bottom:1.2500vw;border-bottom:0.0694vw solid rgba(0, 0, 0, 0.15);}
+    #winerefrigerator_wrap .sec_winecolor .slider2 .product_color {margin-bottom:1.4583vw; font-size:1.2500vw;}
+    #winerefrigerator_wrap .sec_winecolor .slider2 .product_num {font-size:1.0417vw;}
+    #winerefrigerator_wrap .sec_winecolor .slider2 .price_box {width:13.8889vw;font-size:1.2500vw;}
+    #winerefrigerator_wrap .sec_winecolor .slider2 .sale_price {margin-bottom:1.2500vw;}
+    #winerefrigerator_wrap .sec_winecolor .slider2 .sub_desc {font-size:1.0417vw;text-indent:-0.7639vw;}
+    #winerefrigerator_wrap .sec_winecolor .slider2 .slide_tit {bottom:-6.9444vw;}
+    #winerefrigerator_wrap .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom,
+    #winerefrigerator_wrap .swiper-pagination-fraction {bottom:0;left:-1.1806vw;}
+
+    /* sec_intro - 냉장고를 소개합니다*/
+    .sec_intro {margin-bottom:4.3750vw;}
+    #winerefrigerator_wrap .sec_intro > .txt_box {margin-bottom:2.5000vw;}
+    #winerefrigerator_wrap .sec_intro > .txt_box .title {margin-right:1.3889vw;font-size:1.8056vw;}
+    .sec_intro .txt_box .cta.black {width:10.9722vw;height:2.6389vw;font-size:1.2500vw;border-radius:1.3194vw;}
+    #winerefrigerator_wrap .sec_intro .slider {width:100.0000vw;padding:0 4.1667vw;}
+    #winerefrigerator_wrap .sec_intro .slider .list > li {width:37.2222vw;margin-right:1.6667vw;}
+    #winerefrigerator_wrap .sec_intro .slider .img_box {border-radius:0.6944vw;}
+    #winerefrigerator_wrap .sec_intro .slider .txt_box {margin-top:1.9444vw;}
+    #winerefrigerator_wrap .sec_intro .slider .txt_box.kitchenfit {padding-left:3.1250vw;}
+    #winerefrigerator_wrap .sec_intro .slider .txt_box.winestorage {padding-left:2.0139vw;}
+    #winerefrigerator_wrap .sec_intro .slider .txt_box.humidity {padding-left:3.2639vw;}
+    #winerefrigerator_wrap .sec_intro .slider .txt_box.low_noise {padding-left:5.1389vw;}
+    #winerefrigerator_wrap .sec_intro .slider .txt_box.at_home {padding-left:4.0278vw;}
+    #winerefrigerator_wrap .sec_intro .slider .txt_box.auto_open {padding-left:4.5139vw;}
+    #winerefrigerator_wrap .sec_intro .slider .txt_box.kitchenfit::before {top:0.1389vw;left:-0.0694vw;width:2.2222vw;height:2.6389vw;background:url('../images/wine_intro_kitchen_pc.png') center no-repeat;background-size:2.2222vw 2.6389vw;}
+    #winerefrigerator_wrap .sec_intro .slider .txt_box.winestorage::before {top:0.0694vw;width:1.0417vw;height:2.9167vw;background:url('../images/wine_intro_storage_pc.png') center no-repeat;background-size:1.0417vw 2.9167vw;}
+    #winerefrigerator_wrap .sec_intro .slider .txt_box.humidity::before {top:0.1389vw;left:0.4861vw;width:1.5278vw;height:2.3611vw;background:url('../images/wine_intro_humidity_pc.png') center no-repeat;background-size:1.5278vw 2.3611vw;}
+    #winerefrigerator_wrap .sec_intro .slider .txt_box.low_noise::before {top:0.2083vw;width:3.8194vw;height:1.1806vw;background:url('../images/wine_intro_low_noise_pc.png') center no-repeat;background-size:3.8194vw 1.1806vw;}
+    #winerefrigerator_wrap .sec_intro .slider .txt_box.at_home::before {top:0.0694vw;width:3.0556vw;height:2.2222vw;background:url('../images/wine_intro_at_home_pc.png') center no-repeat;background-size:3.0556vw 2.2222vw;}
+    #winerefrigerator_wrap .sec_intro .slider .txt_box.auto_open::before {top:0.0694vw;width:3.4722vw;height:3.0556vw;background:url('../images/wine_intro_auto_open_pc.png') center no-repeat;background-size:3.4722vw 3.0556vw;}
+    #winerefrigerator_wrap .sec_intro .slider .title {margin-bottom:0.9028vw;font-size:1.6667vw;}
+    #winerefrigerator_wrap .sec_intro .slider .desc {margin-bottom:0.9722vw;font-size:1.1111vw;}
+    #winerefrigerator_wrap .sec_intro .slider .sub_desc {padding-left:0.4167vw;text-indent:-0.4167vw;font-size:0.9722vw;}
+    .sec_intro .slider .control {top:7.9861vw;width:96.2500vw;}
+    .sec_intro .slider .control .btn {width:0.9028vw;height:1.6667vw;}
+    .sec_intro .slider .control .btn::before {top:-10vw;width:4.1667vw;height:34.0278vw;}
+    .sec_intro .slider .control .btn_prev {background:url('../images/arrow_prev.png') center no-repeat;background-size:0.9028vw 1.6667vw;}
+    .sec_intro .slider .control .btn_next {background:url('../images/arrow_next.png') center no-repeat;background-size:0.9028vw 1.6667vw;}
+    .sec_intro .slider .control .btn_prev.swiper-button-disabled {background:url('../images/arrow_prev_disabled.png') center no-repeat;background-size:0.9028vw 1.6667vw;}
+    .sec_intro .slider .control .btn_next.swiper-button-disabled {background:url('../images/arrow_next_disabled.png') center no-repeat;background-size:0.9028vw 1.6667vw;}
+
+    /* sec_photo - 포토 상품평 이벤트 */
+    #winerefrigerator_wrap .sec_photo {margin-bottom:7.9861vw;padding-bottom:1.3889vw;}
+    #winerefrigerator_wrap .sec_photo .photo_box {width:41.9444vw;}
+    #winerefrigerator_wrap .sec_photo .photo_box .img_box {top:2.4306vw;width:12.9861vw;}
+    #winerefrigerator_wrap .sec_photo .photo_box .title {margin-bottom:0.8333vw;font-size:2.9167vw;}
+    #winerefrigerator_wrap .sec_photo .photo_box .desc {margin-bottom:1.3194vw;font-size:1.1111vw;}
+    #winerefrigerator_wrap .sec_photo .event_explain {margin-bottom:1.8750vw;}
+    #winerefrigerator_wrap .sec_photo .explain_item {margin-bottom:1.1111vw;}
+    #winerefrigerator_wrap .sec_photo .explain_title {width:8.6111vw; font-size:0.9722vw;}
+    #winerefrigerator_wrap .sec_photo .explain_desc {width:27.3611vw;font-size:0.9722vw;}
+    #winerefrigerator_wrap .sec_photo .explain_sub_desc {margin:1.1111vw 0 0 8.6111vw;font-size:0.9722vw;}
+    #winerefrigerator_wrap .sec_photo .cta_box {top:23.5417vw;}
+    #winerefrigerator_wrap .sec_photo .cta.black {width:7.3611vw;height:2.6389vw;margin-right:2.5694vw;border-radius:1.3194vw;}
+    #winerefrigerator_wrap .sec_photo .accordion_button {font-size:1.1111vw;}
+
+    /* howto_apply - 이벤트 응모방법 */
+    #winerefrigerator_wrap .howto_apply {width:45.0000vw;margin-top:0.2083vw;}
+    #winerefrigerator_wrap .howto_apply .title {margin-bottom:3.0556vw;font-size:1.2500vw;}
+    #winerefrigerator_wrap .howto_apply .title::after {top:50%;left:8.7500vw;height:0.0694vw;}
+    #winerefrigerator_wrap .howto_apply .apply_item {width:13.8889vw;height:21.1806vw;padding-top:1.9444vw;border:0.0694vw solid #ddd;border-radius:0.6944vw;box-shadow:0.4861vw 0.4861vw 0.6944vw 0.0000vw rgba(0, 0, 0, 0.05);}
+    #winerefrigerator_wrap .howto_apply .img_box {width:8.3333vw;margin-bottom:1.1111vw;}
+    #winerefrigerator_wrap .howto_apply .img_box .apply_tag {width:2.3611vw;height:2.3611vw;font-size:1.1111vw;}
+    #winerefrigerator_wrap .howto_apply .desc {font-size:1.1111vw;}
+    #winerefrigerator_wrap .howto_apply .underline {margin-top:0.8333vw;padding-bottom:0.2083vw;font-size:1.1111vw;}
+    #winerefrigerator_wrap .howto_apply .cta.black {width:7.7083vw;height:2.3611vw;margin-top:2.0833vw;font-size:1.1111vw;border-radius:1.1806vw;}
+    
+    /* sec_dotcom - 삼성닷컴 회원 혜택 모두보기 */
+    #winerefrigerator_wrap .sec_dotcom {padding:8.7500vw 4.1667vw 10.8333vw;}
+    #winerefrigerator_wrap .sec_dotcom .txt_box {margin-bottom:3.3333vw;}
+    #winerefrigerator_wrap .sec_dotcom .txt_box .title {margin-bottom:3.1944vw;font-size:2.9167vw;}
+    #winerefrigerator_wrap .sec_dotcom .txt_box .cta.black {width:9.5833vw;height:2.6389vw;margin-right:2.3611vw;font-size:1.1111vw;border-radius:1.3194vw;}
+    #winerefrigerator_wrap .sec_dotcom .txt_box .btn_more {padding:0 1.1806vw 0.2778vw 0;font-size:1.2500vw;border-bottom:0.0694vw solid #000;}
+    #winerefrigerator_wrap .sec_dotcom .txt_box .btn_more::after {top:calc(50% - 0.1736vw);width:0.4167vw;height:0.6944vw;background:url('../images/more_arrow.png') center no-repeat;background-size:0.4167vw 0.6944vw;}
+    #winerefrigerator_wrap .sec_dotcom .dotcom_list {gap:1.6667vw;width:91.6667vw;margin-bottom:6.3889vw;}
+    #winerefrigerator_wrap .sec_dotcom .dotcom_item {width:21.6667vw;height:18.7500vw;padding:2.2222vw 2.0833vw;}
+    #winerefrigerator_wrap .sec_dotcom .dotcom_item.point {background:url('../images/wine_dotcom_01_pc.jpg') center no-repeat;background-size:100% 100%;}
+    #winerefrigerator_wrap .sec_dotcom .dotcom_item.percent {background:url('../images/wine_dotcom_02_pc.jpg') center no-repeat;background-size:100% 100%;}
+    #winerefrigerator_wrap .sec_dotcom .dotcom_item.calendar {background:url('../images/wine_dotcom_03_pc.jpg') center no-repeat;background-size:100% 100%;}
+    #winerefrigerator_wrap .sec_dotcom .dotcom_item.delivery {background:url('../images/wine_dotcom_04_pc.jpg') center no-repeat;background-size:100% 100%;}
+    #winerefrigerator_wrap .sec_dotcom .dotcom_item.youmake {height:20.8333vw;padding:2.9861vw 7.7778vw;background:url('../images/wine_dotcom_05_pc.jpg') center no-repeat;background-size:100% 100%;}
+    #winerefrigerator_wrap .sec_dotcom .dotcom_item .title {margin-bottom:0.3472vw;font-size:1.6667vw;}
+    #winerefrigerator_wrap .sec_dotcom .dotcom_item .sub_desc {font-size:0.9722vw;}
+    #winerefrigerator_wrap .sec_dotcom .dotcom_item.youmake .title {margin-bottom:0.6944vw;font-size:2.9167vw;}
+    #winerefrigerator_wrap .sec_dotcom .dotcom_item.youmake .desc {margin-bottom:1.5278vw;font-size:1.2500vw;}
+    #winerefrigerator_wrap .sec_dotcom .dotcom_item.youmake .cta.black {width:8.8194vw;height:2.6389vw;border-radius:1.3194vw;}
+
+}
+
+@media screen and (max-width:768px) {
+    #winerefrigerator_wrap .pc_only {display:none !important;} 
+    #winerefrigerator_wrap .mo_only {display:block !important;}
+    #winerefrigerator_wrap {max-width:100vw;}
+    #winerefrigerator_wrap p {letter-spacing:-0.015em;}
+    #winerefrigerator_wrap .pd_60 {max-width:100vw;margin:0 auto;padding:0 8.3333vw;}
+    .font_bold {letter-spacing:0;}
+    .font_navy {font-size:6.6667vw;}
+
+    
+    /* accordion - 혜택 유의사항 영역 */
+    #winerefrigerator_wrap .accordion {max-width:100%;padding:1.3889vw 0;}
+    #winerefrigerator_wrap .accordion_button {padding:0 2.7344vw 0.2604vw 0;font-size:2.6042vw;}
+    #winerefrigerator_wrap .accordion_button::after {width:1.3021vw;height:0.7813vw;background:url('../images/notice_arrow.png') center no-repeat;background-size:1.3021vw 0.7813vw;}
+    #winerefrigerator_wrap .accordion_button.on::after {background:url('../images/notice_arrow_on.png') center no-repeat;background-size:1.3021vw 0.7813vw;}
+    #winerefrigerator_wrap .accordion_box {padding:7.8125vw 0;}
+    #winerefrigerator_wrap .accordion_flex {display:block;}
+    #winerefrigerator_wrap .accordion_flex > div {width:100%;}
+    #winerefrigerator_wrap .accordion_flex .notice_left {padding-right:0;border-right:none;}
+    #winerefrigerator_wrap .accordion_flex .notice_right {padding-left:0;}
+    #winerefrigerator_wrap .accordion_flex .notice_list {margin-bottom:7.6389vw;}
+    #winerefrigerator_wrap .accordion_flex .notice_title {margin-bottom:1.8229vw;font-size:3.1250vw;}
+    #winerefrigerator_wrap .accordion_flex .notice_desc {padding-left:1.8229vw;font-size:2.8646vw;line-height:3.9063vw;margin-bottom:1.0417vw;color:#717171;}
+    #winerefrigerator_wrap .accordion_flex .notice_desc::before {top:1.5625vw;width:0.3906vw;height:0.3906vw;border-radius:0;background-color:#717171;}
+    #winerefrigerator_wrap .accordion_flex a {color:#717171;}
+    
+    /* gnb */
+    .gnb {border-bottom:0.1389vw solid rgba(0, 0, 0, 0.1);}
+    .gnb_box {height:14.3056vw;}
+    .gnb_box .logo {width:36.63vw;margin-left:6.5278vw;}
+    .gnb_box .account_list {flex-direction:row-reverse;gap:4.4444vw;}
+    .gnb_box .gnb_content_box {position:relative;justify-content:flex-end;padding:0 16.8056vw 0 0;}
+    .gnb_box .gnb_content_box .gnb_menu{position:absolute;right:7.0833vw;top:50%;transform:translateY(-50%);width:5.0000vw;height:4.4444vw;background:url('../images/gnb_menu.png') top center no-repeat;background-size:100%;}
+    .gnb_box .account_item .search {width:6.1111vw;height:6.1111vw;background:url('../images/gnb_search_mo.png') top center no-repeat;background-size:100%;}
+    .gnb_box .account_item .cart {width:6.3889vw;height:6.1111vw;background:url('../images/gnb_cart_mo.png') top center no-repeat;background-size:100%;}
+        
+    /* section_kv - 상단 kv */
+    #winerefrigerator_wrap .sec_kv {max-width:100%;}
+    #winerefrigerator_wrap .sec_kv .txt_box {top:12.0833vw;width:100%;}
+    #winerefrigerator_wrap .sec_kv .txt_box .title{margin-bottom:6.9444vw;font-size:10.0000vw;line-height:11.9444vw;}
+    #winerefrigerator_wrap .sec_kv .txt_box .desc {font-size:3.1250vw;line-height:5.2083vw;color:#666;}
+
+    
+    /* nav_bar - 탭메뉴 */
+    .nav_bar::before {top:0;height:0.1302vw;}
+    .nav_bar .slider {width:100%;margin:0 auto;padding-top:0;}
+    .nav_bar .swiper-wrapper {height:24.8611vw;box-sizing:border-box;}
+    .nav_bar .slider .list > li {width:36.8056vw;}
+    .nav_bar .slider .list > li a {padding:3.2639vw 0 0 4.1667vw;border-left:0.1302vw solid #ddd;}
+    #winerefrigerator_wrap .nav_bar .slider .title {margin-bottom:1.8056vw;font-size:3.0556vw;line-height:3.6111vw;letter-spacing:-0.025em;}
+    #winerefrigerator_wrap .nav_bar .slider .title .sold_out {position:absolute;width:5.1389vw;height:5.1389vw;margin:-0.5208vw 0.0000vw 0.0000vw 1vw;font-size:1.8229vw;line-height:2.0833vw;border-radius:0.5208vw;}
+    #winerefrigerator_wrap .nav_bar .slider .list > li .nav_tab.on {width:calc(100% - 1.5278vw);}
+    #winerefrigerator_wrap .nav_bar .slider .list > li .nav_tab.on::before {bottom:calc(100% - 1px);width:100%;height:1.8229vw;border-radius:0.7813vw 0.7813vw 0 0;}
+    #winerefrigerator_wrap .nav_bar .slider .list > li .nav_tab.on::after {width:1.5278vw;height:26.1111vw;background:url('../images/tab_tail_mo.png') center no-repeat;background-size:1.5278vw 26.1111vw;}
+    .nav_bar .slider .title sup {margin-left:0.3906vw;font-size:60%;vertical-align:baseline;}
+    #winerefrigerator_wrap .nav_bar .slider .period {font-size:2.0833vw;margin-left:0.2604vw;letter-spacing:0.01em;}
+    .nav_bar .slider .slide_tit {display:none;}
+    
+    /* sec_mainkv - 메인 kv */
+    .sec_mainkv .txt_box {top:16.6667vw;left:50%;width:100%;transform:translateX(-50%);text-align:center;}
+    #winerefrigerator_wrap .sec_mainkv .title {margin-bottom:4.1667vw;font-size:8.8889vw;line-height:9.7222vw;}
+    #winerefrigerator_wrap .sec_mainkv .desc {margin-left:0;font-size:3.6111vw;}
+
+    
+    /* sec_benefit - 런칭 구매 혜택 */
+    #winerefrigerator_wrap section.sec_benefit {margin-top:10.6944vw;margin-bottom:16.6667vw;}
+    #winerefrigerator_wrap section.sec_benefit .title {margin-bottom:6.6666vw;font-size:6.1111vw;}
+    .sec_benefit .slider {width:100%;margin-bottom:6.55vw;pointer-events:auto;}
+    .sec_benefit .slider .list > li {width:52.6389vw;height:52.7778vw;margin-right:3.3333vw;}
+    .sec_benefit .slider .list > li.point {background:url('../images/wine_benefit_01_mo.jpg') center no-repeat;background-size:100% 100%;}
+    .sec_benefit .slider .list > li.install {background:url('../images/wine_benefit_02_mo.jpg') center no-repeat;background-size:100% 100%;}
+    .sec_benefit .slider .list > li.delivery {background:url('../images/wine_benefit_03_mo.jpg') center no-repeat;background-size:100% 100%;margin-right:0;}
+    .sec_benefit .slider .list > li .title_tag {right:1.9444vw;top:-1.3889vw;width:9.4444vw;height:8.6111vw;font-size:2.7778vw;line-height:3.3333vw;background-color:#ae3438;border-radius:0.5556vw;}
+    .sec_benefit .slider .list > li .title_tag::after {right:-0.5556vw;border-right:0.9722vw solid transparent;border-bottom:1.3889vw solid #670a0e;border-left:0.0000vw solid transparent;}
+    .sec_benefit .slider .tag_black {height:3.3333vw;margin-bottom:1.8056vw;padding:0 0.8333vw;font-size:2.2222vw;border-radius:0.4167vw;background-color:#000;color:#fff;}
+    .sec_benefit .slider .txt_box {margin:2.8167vw 0 0 3.1112vw;}
+    #winerefrigerator_wrap .sec_benefit .slider .desc {margin-bottom:1.9444vw;font-size:3.3333vw;line-height:4.4444vw;letter-spacing:-0.05em;}
+    #winerefrigerator_wrap .sec_benefit .slider .desc span.font_bold {letter-spacing:-0.025em;}
+    #winerefrigerator_wrap .sec_benefit .slider .txt_box a.underline {margin-bottom:1.6667vw;padding-bottom:0.4167vw;font-size:2.7778vw;}
+    #winerefrigerator_wrap .sec_benefit .slider .sub_desc {padding-left:1.3889vw;font-size:2.5000vw;line-height:3.6111vw;text-indent:-1.3889vw;letter-spacing:-0.035em;color:#666;}
+    #winerefrigerator_wrap .sec_benefit .slider .control {display:flex !important;justify-content:space-between;left:-5.0000vw;top:21.2500vw;width:94.0222vw;margin:0 auto;background-color:transparent;}
+    #winerefrigerator_wrap .sec_benefit .slider .control .btn {position:relative;width:1.8056vw;height:3.3333vw;}
+    #winerefrigerator_wrap .sec_benefit .slider .control .btn::before {content:'';position:absolute;top:-27.7778vw;width:8.3333vw;height:68.0556vw;transform:translateX(-50%);background-color:#fff;z-index:-1;cursor:auto;pointer-events :none;}
+    #winerefrigerator_wrap .sec_benefit .slider .control .btn_prev {background:url('../images/arrow_prev.png') center no-repeat;background-size:1.8056vw 3.3333vw;}
+    #winerefrigerator_wrap .sec_benefit .slider .control .btn_next {background:url('../images/arrow_next.png') center no-repeat;background-size:1.8056vw 3.3333vw;}
+    #winerefrigerator_wrap .sec_benefit .slider .control .btn_prev.swiper-button-disabled {background:url('../images/arrow_prev_disabled.png') center no-repeat;background-size:1.8056vw 3.3333vw;}
+    #winerefrigerator_wrap .sec_benefit .slider .control .btn_next.swiper-button-disabled {background:url('../images/arrow_next_disabled.png') center no-repeat;background-size:1.8056vw 3.3333vw;}
+    #winerefrigerator_wrap .sec_benefit .slider .control .btn.btn_prev::before {left:0;}
+    #winerefrigerator_wrap .sec_benefit .slider .control .btn.btn_next::before {left:100%;}
+    .sec_benefit .slider .slide_tit {display:none;}
+    #winerefrigerator_wrap .sec_benefit .accordion_button {letter-spacing: 0;}
+    
+    /* sec_winecolor - 나만의 컬러 조합 */
+    #winerefrigerator_wrap .sec_winecolor {margin-bottom:15.1333vw;}
+    #winerefrigerator_wrap .sec_winecolor .txt_box {display:flex;flex-direction:column;align-items:center;text-align:center;margin-bottom:8.3334vw;}
+    #winerefrigerator_wrap .sec_winecolor .txt_box .title {margin:0 0 5.9111vw 0;font-size:6.1111vw;line-height:7.4222vw;}
+    .sec_winecolor .txt_box .cta.black {width:39.4444vw;height:7.7778vw;font-size:3.0556vw;border-radius:4.1667vw;}
+    #winerefrigerator_wrap .sec_winecolor .slider2 {width:100%;margin:0;padding:0 0 8.4723vw 8.3333vw;overflow:hidden;}
+    .sec_winecolor .swiper-wrapper {margin-bottom:5.5556vw;}
+    .sec_winecolor .slider2 .tag {display:flex;flex-direction:column;justify-content:center;align-items:center;position:absolute;top:2.9167vw;right:-1.3889vw;width:10.0000vw;height:10.0000vw;border-radius:0.2778vw;}
+    .sec_winecolor .slider2 .list > li {position:relative;flex-direction:column;justify-content:flex-start;margin-right:2.7778vw;width:44.4444vw;height:81.9444vw;background-color:#f8f8f8;border-radius:1.3889vw;}
+    .sec_winecolor .slider2 .tag.new {background-color:#86beb9;}
+    .sec_winecolor .slider2 .tag.best {background-color:#e79978;}
+    .sec_winecolor .slider2 .tag::after {content:'';position:absolute;right:0.1778vw;bottom:-0.6944vw;width:1.3889vw;height:1.3889vw;transform:skewY(-50deg);z-index:-1;}
+    .sec_winecolor .slider2 .tag.new::after {background-color:#55a39d;}
+    .sec_winecolor .slider2 .tag.best::after {background-color:#a2725d;}
+    .sec_winecolor .slider2 .control {justify-content:space-between;top:39.3056vw;width:92.7778vw;transform:translateX(-50%);margin:0 auto;background-color:transparent;}
+    .sec_winecolor .slider2 .control .btn {position:relative;width:1.8056vw;height:3.3333vw;}
+    .sec_winecolor .slider2 .control .btn::before {content:'';position:absolute;top:-42vw;width:8.3333vw;height:95.9722vw;transform:translateX(-50%);background-color:#fff;z-index:-1;cursor:auto;}
+    .sec_winecolor .slider2 .control .btn.btn_prev::before {left:0.2778vw;}
+    .sec_winecolor .slider2 .control .btn.btn_next::before {left:calc(100% + 10vw);}
+    .sec_winecolor .slider2 .control .btn_prev {background:url('../images/arrow_prev.png') center no-repeat;background-size:1.8056vw 3.3333vw;;}
+    .sec_winecolor .slider2 .control .btn_next {background:url('../images/arrow_next.png') center no-repeat;background-size:1.8056vw 3.3333vw;}
+    .sec_winecolor .slider2 .btn_pause {position:absolute;left:50%;bottom:0;width:3.1944vw;height:4.0278vw;margin-left:22.1667vw;background:url('../images/btn_pause_mo.png') center no-repeat;background-size:3.1944vw 4.0278vw;z-index:10;}
+    .sec_winecolor .slider2 .btn_pause.on {background:url('../images/btn_play_pc.png') center no-repeat;background-size:3.1944vw 4.0278vw;}
+    .sec_winecolor .slider2 .swiper-pagination-bullet {width:7.0833vw;height:0.5556vw;}
+    .sec_winecolor .slider2 .swiper-pagination-bullet {border-radius:0;}
+    .sec_winecolor .slider2 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {margin:0 0.9722vw;}
+    #winerefrigerator_wrap .sec_winecolor .slider2 .tag span {line-height:2.7778vw;color:#fff;}
+    #winerefrigerator_wrap .sec_winecolor .slider2 .tag .font_bold {font-size:2.6389vw;}
+    #winerefrigerator_wrap .sec_winecolor .slider2 .tag .font_700 {font-size:2.6389vw;}
+    #winerefrigerator_wrap .sec_winecolor .slider2 .list > li .img_box {margin-bottom:7.7778vw;}
+    #winerefrigerator_wrap .sec_winecolor .slider2 .txt_box {width:37.5000vw;margin-bottom:4.0278vw;padding-bottom:3.75vw;border-bottom:0.1389vw solid rgba(0, 0, 0, 0.15);}
+    #winerefrigerator_wrap .sec_winecolor .slider2 .product_color {margin-bottom:4.7222vw;font-size:4.1667vw;}
+    #winerefrigerator_wrap .sec_winecolor .slider2 .product_num {font-size:2.5000vw;letter-spacing:0;color:#5b5b5b;}
+    #winerefrigerator_wrap .sec_winecolor .slider2 .price_box {width:37.5000vw;font-size:3.0556vw;}
+    #winerefrigerator_wrap .sec_winecolor .slider2 .sale_price {margin-bottom:1.3889vw;}
+    #winerefrigerator_wrap .sec_winecolor .slider2 .sub_desc {margin-left:-8.3333vw;font-size:2.5000vw;text-indent:-1.5278vw;}
+    #winerefrigerator_wrap .sec_winecolor .slider2 .slide_tit {bottom:-13.8889vw;}
+    #winerefrigerator_wrap .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom,
+    #winerefrigerator_wrap .swiper-pagination-fraction {bottom:1.3889vw;}
+    
+    .sec_winecolor .slider2 .swiper-pagination .swiper-pagination-bullet {position: relative; background: #000000;color: #000000;opacity: 0.2;overflow: hidden;}
+    .sec_winecolor .slider2 .swiper-pagination .swiper-pagination-bullet-active {position: relative; background: #cccccc;color: #cccccc;opacity: 1;}
+    .sec_winecolor .slider2 .swiper-pagination .swiper-pagination-bullet-active::after {content: ''; position: absolute;top: 0;left: 0;width:0;height:0.5556vw;background: #000000;}
+    .sec_winecolor .slider2 .swiper-pagination .swiper-pagination-bullet-active::after {animation-name: countingBar;animation-duration: 5s;animation-timing-function: linear;animation-fill-mode:forwards;}
+
+    @keyframes countingBar {
+        0% {width: 0;}
+        100% {width:100%;}
+    }
+
+
+    /* sec_intro - 냉장고를 소개합니다*/
+    .sec_intro {margin-bottom:7.4833vw;}
+    #winerefrigerator_wrap .sec_intro > .txt_box {justify-content:space-between;margin-bottom:5.8333vw;}
+    #winerefrigerator_wrap .sec_intro > .txt_box .title {margin-right:2.7778vw;font-family:'SamsungOneKorean700';font-size:6.1111vw;line-height:7.7778vw;letter-spacing:-0.03em;}
+    .sec_intro .txt_box .cta.black {width:26.5278vw;height:7.7778vw;font-size:3.0556vw;border-radius:3.8889vw;}
+    #winerefrigerator_wrap .sec_intro .slider {width:100%;margin:0;padding:0 3.3333vw 0 8.3333vw ;overflow:hidden;}
+    #winerefrigerator_wrap .sec_intro .slider .list > li {width:74.4444vw;margin-right:2.7778vw;}
+    #winerefrigerator_wrap .sec_intro .slider .list > li:last-child {margin-right:5vw;}
+    #winerefrigerator_wrap .sec_intro .slider .img_box {width:100%;border-radius:1.3889vw;}
+    #winerefrigerator_wrap .sec_intro .slider .txt_box {margin-top:6.3667vw;}
+    #winerefrigerator_wrap .sec_intro .slider .txt_box.kitchenfit {padding-left:7.6389vw;}
+    #winerefrigerator_wrap .sec_intro .slider .txt_box.winestorage {padding-left:5.1389vw;}
+    #winerefrigerator_wrap .sec_intro .slider .txt_box.humidity {padding-left:5.2778vw;}
+    #winerefrigerator_wrap .sec_intro .slider .txt_box.low_noise {padding-left:12.0833vw;}
+    #winerefrigerator_wrap .sec_intro .slider .txt_box.at_home {padding-left:10.8333vw;}
+    #winerefrigerator_wrap .sec_intro .slider .txt_box.auto_open {padding-left:9.0278vw;}
+    #winerefrigerator_wrap .sec_intro .slider .txt_box.kitchenfit::before {top:0.2778vw;left:-0.1389vw;width:5.4167vw;height:6.5278vw;background:url('../images/wine_intro_kitchen_mo.png') center no-repeat;background-size:5.4167vw 6.5278vw;}
+    #winerefrigerator_wrap .sec_intro .slider .txt_box.winestorage::before {top:0.1389vw;width:2.5000vw;height:6.9444vw;background:url('../images/wine_intro_storage_mo.png') center no-repeat;background-size:2.5000vw 6.9444vw;}
+    #winerefrigerator_wrap .sec_intro .slider .txt_box.humidity::before {top:0.2778vw;left:0.9722vw;width:3.7500vw;height:5.4167vw;background:url('../images/wine_intro_humidity_mo.png') center no-repeat;background-size:3.7500vw 5.4167vw;}
+    #winerefrigerator_wrap .sec_intro .slider .txt_box.low_noise::before {top:0.4167vw;width:9.1667vw;height:2.6389vw;background:url('../images/wine_intro_low_noise_mo.png') center no-repeat;background-size:9.1667vw 2.6389vw;}
+    #winerefrigerator_wrap .sec_intro .slider .txt_box.at_home::before {top:0.1389vw;width:7.5000vw;height:5.2778vw;background:url('../images/wine_intro_at_home_mo.png') center no-repeat;background-size:7.5000vw 5.2778vw;}
+    #winerefrigerator_wrap .sec_intro .slider .txt_box.auto_open::before {top:0.1389vw;width:8.0556vw;height:6.9444vw;background:url('../images/wine_intro_auto_open_mo.png') center no-repeat;background-size:8.0556vw 6.9444vw;}
+    #winerefrigerator_wrap .sec_intro .slider .title {margin-bottom:1.9444vw;font-size:4.1667vw;letter-spacing: -0.055em;}
+    #winerefrigerator_wrap .sec_intro .slider .desc {margin-bottom:1.8056vw;font-size:2.9167vw;line-height:3.5111vw;letter-spacing: -0.06em;}
+    #winerefrigerator_wrap .sec_intro .slider .sub_desc {padding-left:0.8333vw;text-indent:-0.8333vw;font-size:2.5000vw;line-height:3.6111vw;}
+    .sec_intro .slider .control {top:19.1667vw;width:92.7778vw;}
+    .sec_intro .slider .control .btn {width:1.8056vw;height:3.3333vw;}
+    .sec_intro .slider .control .btn::before {top:-33.8889vw;width:9.2333vw;height:90.2778vw;}
+    .sec_intro .slider .control .btn.btn_prev::before {left:0;}
+    .sec_intro .slider .control .btn.btn_next::before {left:calc(100% + 13.8889vw);}
+    .sec_intro .slider .control .btn_prev {background:url('../images/arrow_prev.png') center no-repeat;background-size:1.8056vw 3.3333vw;}
+    .sec_intro .slider .control .btn_next {background:url('../images/arrow_next.png') center no-repeat;background-size:1.8056vw 3.3333vw;}
+
+    /* sec_photo - 포토 상품평 이벤트 */
+    #winerefrigerator_wrap .sec_photo {margin-bottom:16.6667vw;}
+    #winerefrigerator_wrap .sec_photo .photo_box {width:83.3333vw;margin:0 auto;}
+    #winerefrigerator_wrap .sec_photo .photo_box .img_box {top:29.1667vw;right:-5.6944vw;width:24.1667vw;}
+    #winerefrigerator_wrap .sec_photo .photo_box .title {margin-bottom:5.5555vw;font-size:8.3333vw;}
+    #winerefrigerator_wrap .sec_photo .photo_box .desc {margin-bottom:7.0833vw;font-size:3.3333vw;line-height:5.0000vw;letter-spacing:-0.05em;}
+    #winerefrigerator_wrap .sec_photo .event_explain {margin-bottom:3.7500vw;}
+    #winerefrigerator_wrap .sec_photo .explain_item {margin-bottom:3.7667vw;}
+    #winerefrigerator_wrap .sec_photo .explain_title {width:23.7500vw;font-size:3.0556vw;}
+    #winerefrigerator_wrap .sec_photo .explain_desc {width:55.5556vw;font-size:3.0556vw;}
+    #winerefrigerator_wrap .sec_photo .explain_sub_desc {margin:1.8055vw 0 0 23.7500vw;padding-left:2.0833vw;font-size:3.0556vw;line-height:4.4444vw;text-indent:-2.0833vw;}
+    #winerefrigerator_wrap .sec_photo .cta_box {position:relative;display:flex;justify-content:center;align-items:center;top:0;width:100%;margin-top:6.9444vw;}
+    #winerefrigerator_wrap .sec_photo .cta.black {width:25.2778vw;height:7.7778vw;margin-right:5.1389vw;font-size:2.7778vw;border-radius:3.8889vw;}
+    #winerefrigerator_wrap .sec_photo .accordion_button {padding: 0 2.7344vw 0.5604vw 0; font-size:2.7778vw;letter-spacing: -0.045em;}
+
+    /* howto_apply - 이벤트 응모방법 */
+    #winerefrigerator_wrap .howto_apply {width:83.3333vw;margin:0 auto;margin-top:3.5167vw;}
+    #winerefrigerator_wrap .howto_apply .title {margin-bottom:3.9667vw;font-size:3.0556vw;}
+    #winerefrigerator_wrap .howto_apply .title::after {left:20.8333vw;width:100%;height:0.1389vw;background-color:rgba(0, 0, 0, 0.15);}
+    #winerefrigerator_wrap .howto_apply .apply_item {width:26.3889vw;height:42.3611vw;padding-top:3.8889vw;border:0.1389vw solid #ddd;border-radius:1.3889vw;box-shadow:0.9722vw 0.9722vw 1.3889vw 0.0000vw rgba(0, 0, 0, 0.05);}
+    #winerefrigerator_wrap .howto_apply .img_box {position:relative;width:16.6667vw;margin-bottom:2.2222vw;}
+    #winerefrigerator_wrap .howto_apply .img_box .apply_tag {width:4.7222vw;height:4.7222vw;font-size:2.2222vw;}
+    #winerefrigerator_wrap .howto_apply .desc {font-size:2.7778vw;line-height:3.6111vw;}
+    #winerefrigerator_wrap .howto_apply .underline {margin-top:2.7778vw;padding-bottom:0.4167vw;font-size:2.7778vw;}
+    #winerefrigerator_wrap .howto_apply .cta.black {width:14.1667vw;height:5.0000vw;margin-right:auto;margin-top:5.2778vw;font-size:2.7778vw;border-radius:2.5000vw;}
+        
+    /* sec_dotcom - 삼성닷컴 회원 혜택 모두보기 */
+    #winerefrigerator_wrap .sec_dotcom {padding:16.1111vw 8.3333vw 21.6667vw;background-color:#f5f5f5;}
+    #winerefrigerator_wrap .sec_dotcom .txt_box {text-align:center;margin-bottom:7vw;}
+    #winerefrigerator_wrap .sec_dotcom .txt_box .title {margin-bottom:6.5056vw;font-size:8.0556vw;letter-spacing: -0.045em;}
+    #winerefrigerator_wrap .sec_dotcom .txt_box .cta_box {display:flex;justify-content:center;align-items:center;}
+    #winerefrigerator_wrap .sec_dotcom .txt_box .cta.black {width:22.7778vw;height:7.7778vw;margin-right:4.7222vw;font-size:2.7778vw;border-radius:3.8889vw;}
+    #winerefrigerator_wrap .sec_dotcom .txt_box .btn_more {position:relative;padding:0 2.3611vw 0.5556vw 0;font-size:2.7778vw;border-bottom:0.1389vw solid #000;letter-spacing:-0.045em;}
+    #winerefrigerator_wrap .sec_dotcom .txt_box .btn_more::after {content:'';position:absolute;right:0;top:calc(50% - 0.2778vw);width:0.8333vw;height:1.3889vw;transform:translateY(-50%);background:url('../images/more_arrow.png') center no-repeat;background-size:0.8333vw 1.3889vw;}
+    #winerefrigerator_wrap .sec_dotcom .dotcom_list {display:flex;gap:2.7778vw;flex-wrap:wrap;width:83.3335vw;margin-bottom:6.9889vw;}
+    #winerefrigerator_wrap .sec_dotcom .dotcom_item {width:40.2778vw;height:40.2778vw;padding:4.4444vw 4.1667vw;}
+    #winerefrigerator_wrap .sec_dotcom .dotcom_item.point {background:url('../images/wine_dotcom_01_mo.jpg') center no-repeat;background-size:40.2778vw 40.2778vw;}
+    #winerefrigerator_wrap .sec_dotcom .dotcom_item.percent {background:url('../images/wine_dotcom_02_mo.jpg') center no-repeat;background-size:40.2778vw 40.2778vw;}
+    #winerefrigerator_wrap .sec_dotcom .dotcom_item.calendar {background:url('../images/wine_dotcom_03_mo.jpg') center no-repeat;background-size:40.2778vw 40.2778vw;}
+    #winerefrigerator_wrap .sec_dotcom .dotcom_item.delivery {background:url('../images/wine_dotcom_04_mo.jpg') center no-repeat;background-size:40.2778vw 40.2778vw;}
+    #winerefrigerator_wrap .sec_dotcom .dotcom_item.youmake {width:100%;height:89.1667vw;margin-top:5.3vw;padding:8.6111vw 11.1111vw;background:url('../images/wine_dotcom_05_mo.jpg') center no-repeat;background-size:100% 89.1667vw;text-align:center;}
+    #winerefrigerator_wrap .sec_dotcom .dotcom_item .title {margin-bottom:0.9722vw;font-size:3.4722vw;line-height:4.8611vw;}
+    #winerefrigerator_wrap .sec_dotcom .dotcom_item .title .font_bold {letter-spacing:0.03em;}
+    #winerefrigerator_wrap .sec_dotcom .dotcom_item .sub_desc {font-size:2.2222vw;}
+    #winerefrigerator_wrap .sec_dotcom .dotcom_item.youmake .title {margin-bottom:2.3722vw;font-size:6.1111vw;letter-spacing:-0.05em;}
+    #winerefrigerator_wrap .sec_dotcom .dotcom_item.youmake .desc {margin-bottom:5.2778vw;font-size:3.0556vw;line-height:4.7222vw;letter-spacing:-0.035em;}
+    #winerefrigerator_wrap .sec_dotcom .dotcom_item.youmake .cta.black {display:inline-block;width:auto;height:auto;padding:1.1111vw 0;font-size:2.7778vw;border-radius:0;border-bottom:0.1389vw solid #000;background-color:transparent;color:#000;letter-spacing: -0.035em;}
+    #winerefrigerator_wrap .sec_dotcom .accordion_button {margin-left: 2.2389vw;letter-spacing: 0.01em;}
+}

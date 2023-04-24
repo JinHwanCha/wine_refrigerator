@@ -1,0 +1,21 @@
+/* 슬라이드 */
+.slider {position: relative;}
+.slider2 {position: relative;}
+.slider {position: relative;}
+.slider .list > li {display: flex;justify-content: center;align-items: center;width: auto; font-size: 24px;font-weight: 500;}
+.slider2 .list > li {display: flex;justify-content: center;align-items: center;width: auto; font-size: 24px;font-weight: 500;}
+.sec_intro .slider .list > li {display: flex;flex-direction: column;align-items: flex-start; width: auto; font-size: 24px;font-weight: 500;}
+
+
+
+
+/* 슬라이드 버튼, 페이지 번호 */
+.slider .control {display: flex;justify-content: center;align-items: center; position: absolute;bottom: 100px;left:50%; width: 120px; height: 30px;margin-left: 470px; background-color: rgb(0, 0, 0, 0.3);border-radius:15px;z-index: 100;}
+.slider .control .btn {display: flex;align-items: center;font-size: 16px;font-weight: 400;letter-spacing:-0.025em;color: #fff;cursor: pointer;}
+.slider .control .num {margin: 0 7px;font-size: 16px;font-weight: 300;letter-spacing:-0.025em;color: #fff;}
+.slider2 .control {display: flex;justify-content: center;align-items: center; position: absolute;left:50%; width: 120px; height: 30px;margin-left: 470px; background-color: rgb(0, 0, 0, 0.3);border-radius:15px;z-index: 100;}
+.slider2 .control .btn {display: flex;align-items: center;font-size: 16px;font-weight: 400;letter-spacing:-0.025em;color: #fff;cursor: pointer;}
+.slider2 .control .num {margin: 0 7px;font-size: 16px;font-weight: 300;letter-spacing:-0.025em;color: #fff;}
+.sec_intro .slider .control {display: flex;justify-content: center;align-items: center; position: absolute;left:50%; width: 120px; height: 30px;margin-left: 470px; background-color: rgb(0, 0, 0, 0.3);border-radius:15px;z-index: 100;}
+.sec_intro .slider .control .btn {display: flex;align-items: center;font-size: 16px;font-weight: 400;letter-spacing:-0.025em;color: #fff;cursor: pointer;}
+.sec_intro .slider .control .num {margin: 0 7px;font-size: 16px;font-weight: 300;letter-spacing:-0.025em;color: #fff;}
