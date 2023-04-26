@@ -545,7 +545,7 @@ html {scroll-behavior:smooth;}
     #winerefrigerator_wrap .sec_benefit .slider .desc span.font_bold {letter-spacing:-0.025em;}
     #winerefrigerator_wrap .sec_benefit .slider .txt_box a.underline {margin-bottom:1.6667vw;padding-bottom:0.4167vw;font-size:2.7778vw;}
     #winerefrigerator_wrap .sec_benefit .slider .sub_desc {padding-left:1.3889vw;font-size:2.5000vw;line-height:3.6111vw;text-indent:-1.3889vw;letter-spacing:-0.035em;color:#666;}
-    #winerefrigerator_wrap .sec_benefit .slider .control {display:flex !important;justify-content:space-between;left:-5.0000vw;top:21.2500vw;width:94.0222vw;margin:0 auto;background-color:transparent;}
+    #winerefrigerator_wrap .sec_benefit .slider .control {display:flex !important;justify-content:space-between;left:-5.0000vw;top:21.2500vw;width:93vw;margin:0 auto;background-color:transparent;}
     #winerefrigerator_wrap .sec_benefit .slider .control .btn {position:relative;width:1.8056vw;height:3.3333vw;}
     #winerefrigerator_wrap .sec_benefit .slider .control .btn::before {content:'';position:absolute;top:-27.7778vw;width:8.3333vw;height:68.0556vw;transform:translateX(-50%);background-color:#fff;z-index:-1;cursor:auto;pointer-events :none;}
     #winerefrigerator_wrap .sec_benefit .slider .control .btn_prev {background:url('../images/arrow_prev.png') center no-repeat;background-size:1.8056vw 3.3333vw;}
@@ -592,7 +592,7 @@ html {scroll-behavior:smooth;}
     #winerefrigerator_wrap .sec_winecolor .slider2 .product_num {font-size:2.5000vw;letter-spacing:0;color:#5b5b5b;}
     #winerefrigerator_wrap .sec_winecolor .slider2 .price_box {width:37.5000vw;font-size:3.0556vw;}
     #winerefrigerator_wrap .sec_winecolor .slider2 .sale_price {margin-bottom:1.3889vw;}
-    #winerefrigerator_wrap .sec_winecolor .slider2 .sub_desc {margin-left:-8.3333vw;font-size:2.5000vw;text-indent:-1.5278vw;}
+    #winerefrigerator_wrap .sec_winecolor .slider2 .sub_desc {margin-left:-7.3333vw;font-size:2.5000vw;text-indent:-1.5278vw;letter-spacing: -0.035em;}
     #winerefrigerator_wrap .sec_winecolor .slider2 .slide_tit {bottom:-13.8889vw;}
     #winerefrigerator_wrap .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom,
     #winerefrigerator_wrap .swiper-pagination-fraction {bottom:1.3889vw;}
@@ -668,7 +668,7 @@ html {scroll-behavior:smooth;}
     #winerefrigerator_wrap .howto_apply .cta.black {width:14.1667vw;height:5.0000vw;margin-right:auto;margin-top:5.2778vw;font-size:2.7778vw;border-radius:2.5000vw;}
         
     /* sec_dotcom - 삼성닷컴 회원 혜택 모두보기 */
-    #winerefrigerator_wrap .sec_dotcom {padding:16.1111vw 8.3333vw 21.6667vw;background-color:#f5f5f5;}
+    #winerefrigerator_wrap .sec_dotcom {padding:16.1111vw 8.3333vw 27.4667vw;background-color:#f5f5f5;}
     #winerefrigerator_wrap .sec_dotcom .txt_box {text-align:center;margin-bottom:7vw;}
     #winerefrigerator_wrap .sec_dotcom .txt_box .title {margin-bottom:6.5056vw;font-size:8.0556vw;letter-spacing: -0.045em;}
     #winerefrigerator_wrap .sec_dotcom .txt_box .cta_box {display:flex;justify-content:center;align-items:center;}
